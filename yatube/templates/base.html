@@ -20,16 +20,13 @@
     <title>{{title}}</title>
   </head>
   <body>
-    <header>
-      {% include 'includes/header.html' %}
-    </header>
+    {% include 'includes/header.html' %}
     <main>
-      {% block content %}
-        Контент не подвезли :(
-      {% endblock %}
+      <div class="container py-5">
+        {% block content %}
+        {% endblock %}
+      </div>
     </main>
-    <footer>
       {% include 'includes/footer.html' %}
-    </footer>
   </body>
 </html>
