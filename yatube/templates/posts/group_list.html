@@ -1,9 +1,5 @@
 {% extends 'base.html' %}
-{% block title %} Записи сообщества {% endblock %}
-{% block header %}{% endblock %}
 {% block content %}
-<main>
-  <!-- класс py-5 создает отступы сверху и снизу блока -->
   <div class="container py-5">
     <h1>{{ group }}</h1>
     <p>{{ group.description }}</p>
@@ -21,7 +17,5 @@
       <hr>
       {% endif %}
       {% endfor %}
-    </article>
   </div>
-</main>
 {% endblock %}
