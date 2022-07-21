@@ -3,7 +3,7 @@
   <div class="container py-5">
     <h1>Записи сообщества {{ group }}</h1>
     <p>{{ group.description }}</p>
-    {% for post in posts %}
+    {% for post in page_obj %}
     <ul>
       <li>
         Автор: {{ post.author.get_full_name }}
@@ -18,4 +18,5 @@
     {% endif %}
     {% endfor %}
   </div>
+{% include 'posts/includes/paginator.html' %}
 {% endblock %}

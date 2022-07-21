@@ -3,7 +3,7 @@
   <div class="container py-5">
     <h1>Последние обнавления на сайте</h1>
     <article>
-      {% for post in posts %}
+      {% for post in page_obj %}
       <ul>
         <li>
           Автор: {{ post.author.get_full_name }}
@@ -24,4 +24,5 @@
     </article>
     <!-- под последним постом нет линии -->
   </div>
+{% include 'posts/includes/paginator.html' %}
 {% endblock %}
