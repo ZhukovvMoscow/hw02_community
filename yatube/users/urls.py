@@ -1,4 +1,4 @@
-# Импортируем из приложения django.contrib.auth нужный view-класс
+ # Импортируем из приложения django.contrib.auth нужный view-класс
 from django.contrib.auth.views import LogoutView, LoginView
 from django.urls import path
 
